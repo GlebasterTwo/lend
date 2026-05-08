@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060817" />
+    <title>Orbit Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+    <div class="nebula" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Orbit Lab">
+        <span class="brand-mark"></span>
+        <span>Orbit Lab</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#mission">Идея</a>
+        <a href="#modules">Модули</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">personal cosmic landing</p>
+          <h1 id="hero-title">Твоя орбита для будущих идей</h1>
+          <p class="hero-text">
+            Лендинг-основа в космическом настроении: глубокий фон, живые звезды,
+            аккуратные секции и место для фишек, которые мы будем добавлять дальше.
+          </p>
+          <div class="hero-actions" aria-label="Главные действия">
+            <a class="button primary" href="#modules">Посмотреть модули</a>
+            <a class="button ghost" href="#mission">Узнать идею</a>
+          </div>
+        </div>
+
+        <div class="orbit-stage" aria-label="Абстрактная космическая сцена">
+          <div class="orbit-ring ring-one"></div>
+          <div class="orbit-ring ring-two"></div>
+          <div class="planet">
+            <span class="planet-glow"></span>
+            <span class="planet-surface"></span>
+          </div>
+          <span class="satellite satellite-a"></span>
+          <span class="satellite satellite-b"></span>
+        </div>
+      </section>
+
+      <section class="mission" id="mission" aria-labelledby="mission-title">
+        <div class="section-kicker">зачем это место</div>
+        <div class="mission-grid">
+          <h2 id="mission-title">Страница, которую можно развивать по мере твоих идей.</h2>
+          <p>
+            Здесь уже есть визуальный характер, адаптивная сетка и простая структура.
+            Позже можно добавить форму заявок, блог, анимации, галерею, интеграции,
+            личный бренд или мини-приложения.
+          </p>
+        </div>
+      </section>
+
+      <section class="modules" id="modules" aria-labelledby="modules-title">
+        <div class="section-kicker">будущие фишки</div>
+        <h2 id="modules-title">Точки роста</h2>
+        <div class="module-grid">
+          <article class="module-card">
+            <span class="module-icon">01</span>
+            <h3>Живой герой</h3>
+            <p>Можно добавить интерактивную планету, 3D-сцену, параллакс или смену тем.</p>
+          </article>
+          <article class="module-card">
+            <span class="module-icon">02</span>
+            <h3>Контент</h3>
+            <p>Блоки под портфолио, заметки, продукты, подборки или личную историю.</p>
+          </article>
+          <article class="module-card">
+            <span class="module-icon">03</span>
+            <h3>Связь</h3>
+            <p>Форма, Telegram-кнопка, email-рассылка или CRM-поток для заявок.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="contact-widget" id="contacts-widget">
+      <div class="contact-menu" id="contact-menu" aria-hidden="true">
+        <a class="contact-link phone-link" href="tel:+70000000000">+7 000 000-00-00</a>
+        <a class="contact-link telegram-link" href="https://t.me/lending_robotbot" target="_blank" rel="noreferrer">Telegram</a>
+      </div>
+      <button class="contact-toggle" type="button" aria-expanded="false" aria-controls="contact-menu">
+        Контакты
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
